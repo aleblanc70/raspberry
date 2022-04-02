@@ -1,0 +1,14 @@
+- name: Upgrade the OS (apt-get dist-upgrade)
+  become: yes
+  apt:
+    upgrade: dist
+
+- name: Remove useless packages from the cache
+  become: yes
+  apt:
+    autoclean: yes
+
+- name: Remove dependencies that are no longer required
+  become: yes
+  apt:
+    autoremove: yes

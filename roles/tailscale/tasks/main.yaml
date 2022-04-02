@@ -1,0 +1,32 @@
+---
+- name: Update repositories cache and install "apt-transport-https" package
+  command: sudo apt-get install apt-transport-https
+
+- name: Download Tailscale’s package signing key
+  get_url:
+    url: https://pkgs.tailscale.com/stable/raspbian/buster.gpg
+    dest: /tmp/buster.gpg
+
+- name: Install Tailscale’s key
+  command: sudo apt-key add /tmp/buster.gpg
+  become: yes
+
+- name: add tailscale apt repository
+  become: yes
+  apt_repository:
+    repo: 'deb https://pkgs.tailscale.com/stable/raspbian buster main'
+    state: present
+    filename: tailscale
+    update_cache: yes
+
+- name: install tailscale
+  become: yes
+  apt:
+    name: tailscale
+    state: present
+    update_cache: yes
+
+- name: Tailscale Up
+  become: yes
+  command: tailscale up --auth-key '{{ tk }}'
+

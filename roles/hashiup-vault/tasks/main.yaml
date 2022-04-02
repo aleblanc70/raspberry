@@ -1,0 +1,21 @@
+---
+- name: hashi-up template Vault Server
+  delegate_to: 127.0.0.1
+  template:
+    src: vault_server.sh.j2
+    dest: /tmp/vault_server.sh
+    mode: 0755
+
+- name: Execute the script
+  delegate_to: 127.0.0.1
+  shell:
+    /tmp/vault_server.sh
+  register: scroutput
+
+- debug: var=scroutput.stdout_lines
+
+- name: Remove temporary file
+  delegate_to: 127.0.0.1
+  file:
+    path: /tmp/vault_server.sh
+    state: absent

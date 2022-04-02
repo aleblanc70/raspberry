@@ -1,0 +1,46 @@
+dc1:
+  hosts:
+    rasp3-1:
+      ansible_host: 192.168.2.97
+      ansible_connection: ssh
+      ansible_user: rasp31
+      ts_eth: tailscale0
+      ts_ip: 100.94.100.51
+    rasp3-2:
+      ansible_host: 192.168.2.96
+      ansible_connection: ssh
+      ansible_user: rasp32
+      ts_eth: tailscale0
+      ts_ip: 100.107.91.45
+    rasp4-1:
+      ansible_host: 192.168.2.89
+      ansible_connection: ssh
+      ansible_user: rasp41
+      ts_eth: tailscale0
+      ts_ip: 100.68.21.67
+#    rasp3-3:
+#      ansible_host: 100.0.0.0
+#      ansible_connection: ssh
+#      ansible_user: rasp33
+#    rasp3-4:
+#      ansible_host: 100.0.0.0
+#      ansible_connection: ssh
+#      ansible_user: rasp34
+
+# St-Damase - Tailscale already set
+#dc2:
+#  hosts:
+#    rasp3-3:
+#    rasp3-4:
+
+#Consul, Nomad, Vault, servers
+servers:
+  hosts:
+    rasp3-1:
+
+#Docker, Consul Agent, Nomad Agent
+agents:
+  hosts:
+    rasp3-2:
+    rasp4-1:
+

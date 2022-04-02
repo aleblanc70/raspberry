@@ -1,0 +1,22 @@
+---
+- name: hashi-up template Nomad Server
+  delegate_to: 127.0.0.1
+  template:
+    src: nomad_server.sh.j2
+    dest: /tmp/nomad_server.sh
+    mode: 0755
+
+- name: Execute the script
+  delegate_to: 127.0.0.1
+  shell:
+    /tmp/nomad_server.sh
+  register: scroutput
+
+- debug: var=scroutput.stdout_lines
+
+- name: Remove temporary file
+  delegate_to: 127.0.0.1
+  file:
+    path: /tmp/nomad_server.sh
+    state: absent
+

@@ -1,0 +1,15 @@
+---
+- hosts: servers
+  gather_facts: false
+  tasks:
+    - name: Install Hashi Server Consul
+      import_role:
+        name: hashiup-consul
+
+    - name: Install Hashi Server Nomad
+      import_role:
+        name: hashiup-nomad
+
+    - name: Install Hashi Server vault
+      import_role:
+        name: hashiup-vault

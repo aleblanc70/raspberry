@@ -1,0 +1,7 @@
+---
+- hosts: agents
+  gather_facts: false
+  tasks:
+    - name: Install Docker
+      import_role:
+        name: docker

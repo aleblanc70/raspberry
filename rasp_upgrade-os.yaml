@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Server Upgrade
+      import_role:
+        name: upgrade-os
+      tags:
+        - upgrade-os
