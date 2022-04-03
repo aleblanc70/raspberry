@@ -16,7 +16,7 @@ More to come...
 
 ## Order to run my scripts  
 Make sure your ssh key have been deploy to all your nodes.  
-Make sure to adjust tne inventory.yaml file.  
+Make sure to adjust the inventory.yaml file.  
 
 Upgrade the os on all nodes.  
 - ansible-playbook rasp_upgrade-os.yaml  
