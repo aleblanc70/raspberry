@@ -1,7 +1,10 @@
-# raspberry
+# raspberry Home Lab
 
 This is my ansible setup to push my Hashi stack configuration to my home lab. Build on raspberry pi 3 and 4
 Feel free to comment on anything
+
+My ansible host/controller is my Mac mini (M1)
+
 
 Big thanks to:
 
