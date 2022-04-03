@@ -6,7 +6,7 @@ Build on raspberry pi 3 and 4.
 My ansible host/controller is my Mac mini (M1)
 You will need a Tailscale subscription
 
-Big thanks to:
+Big thanks to:  
 Johan Siebens  
 https://github.com/jsiebens/hashi-up/  
 https://johansiebens.dev/  
