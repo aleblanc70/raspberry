@@ -5,7 +5,7 @@ Feel free to comment on anything
 
 Big thanks to:
 
-Johan Siebens 
+Johan Siebens  
 https://github.com/jsiebens/hashi-up/  
 https://johansiebens.dev/  
 
