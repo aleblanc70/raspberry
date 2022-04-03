@@ -7,18 +7,14 @@ My ansible host/controller is my Mac mini (M1)
 You will need a Tailscale subscription
 
 Big thanks to:
-
 Johan Siebens  
 https://github.com/jsiebens/hashi-up/  
 https://johansiebens.dev/  
-
 Made my life easier with hashicorp product deployment  
+More to come...
 
-More to come..
 
-
-Order to run my scripts
-
+## Order to run my scripts
 Make sure to adjust tne inventory.yaml file.  
 Upgrade the os on all nodes.  
 ansible-playbook rasp_upgrade-os.yaml  
@@ -28,3 +24,9 @@ ansible-playbook rasp_tailscale.yaml --ask-vault-pass
 ansible-playbook rasp_docker.yaml  
 ansible-playbook rasp_hashi_server.yaml  
 ansible-playbook rasp_hashi_agents.yaml  
+
+
+
+It's a work in prgress thing
+Todo:  
+https://github.com/users/aleblanc70/projects/1
