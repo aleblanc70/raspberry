@@ -1,5 +1,5 @@
 ---
-- name: Download Docker’s package signing key
+- name: Download Docker’s script
   get_url:
     url: https://get.docker.com
     dest: /tmp/docker-install.sh
