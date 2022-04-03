@@ -6,9 +6,9 @@ Feel free to comment on anything
 Big thanks to:
 
 Johan Siebens 
-https://github.com/jsiebens/hashi-up/
-https://johansiebens.dev/
+https://github.com/jsiebens/hashi-up/  
+https://johansiebens.dev/  
 
-Made my life easier with hashicorp product deployment
+Made my life easier with hashicorp product deployment  
 
 More to come..
