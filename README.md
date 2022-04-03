@@ -1,4 +1,4 @@
-# raspberry Home Lab
+# Raspberry Home Lab
 
 This is my ansible setup to push my Hashi stack configuration to my home lab. Build on raspberry pi 3 and 4
 Feel free to comment on anything
@@ -27,6 +27,6 @@ ansible-playbook rasp_hashi_agents.yaml
 
 
 
-It's a work in prgress thing
+It's a work in prgress thing  
 Todo:  
 https://github.com/users/aleblanc70/projects/1
